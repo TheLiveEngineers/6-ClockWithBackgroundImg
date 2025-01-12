@@ -1,0 +1,82 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html{
+    height: 100%;
+    font-family: cursive;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url('img\ 5.jpg') center/cover no-repeat;
+}
+
+.container{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.time-container{
+    background: rgba(0, 0, 0, 0.6);
+    border: 2px solid rgba(255, 255, 255, 0.6);
+    border-radius: 20px;
+    padding: 30px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.6), o 4px 20px rgba(255, 255, 255, 0.1);
+    text-align: center;
+    max-width: 500px;
+}
+
+.timer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+
+}
+
+.time-unit{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(145deg, rgba(0, 217, 255, 0.6), rgba(50, 248, 5, 0.6));
+    border-radius: 12px;
+    padding: 20px;
+    width: 90px;
+    height: 120px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3), inset 0px 2px 5px rgba(255, 255, 255, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.time-unit:hover{
+    transform: translateY(-5px);
+    box-shadow: 0px 8px 20px rgba(255, 255, 255, 0.808), 0px 0px 20px rgba(0, 123, 255, 0.5);
+}
+
+.time-value{
+    font-size: 3.5rem;
+    font-weight: bold;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.7), 0 0 20px rgba(0, 123, 255, 0.5);
+}
+
+.time-label{
+    margin-top: 7px;
+    font-size: 1rem;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    opacity: 0.9;
+    font-weight: 600;
+}
+
+.time-colon{
+    font-weight: 3.5rem;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.7), 0 0 20px rgba(255, 255, 255, 0.5);
+    color: white;
+    align-self: center;
+}
